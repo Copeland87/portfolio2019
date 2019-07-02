@@ -8,9 +8,11 @@ class Home extends React.Component {
         <div className="hero-text">
           <h1>Zac Copeland</h1>
           <div className="title-collection">
-            <span className="tri-left" />
-            <span className="title">Web Developer | Builder</span>
-            <span className="tri-right" />
+            <div>
+              <span className="tri-left" />
+              <span className="title">Web Developer | Builder</span>
+              <span className="tri-right" />
+            </div>
           </div>
         </div>
       </div>

@@ -66,7 +66,7 @@
 }
 
 .hobby-content {
-  background-color: ;
+  background-color: transparent;
 }
 
 .hobby-title {
@@ -140,6 +140,10 @@
   .hobby-content {
     width: calc(100% / 2);
     float: left;
+  }
+  .hi1 {
+    background-position-x: 41%;
+    background-position-y: 37%;
   }
 }
 
