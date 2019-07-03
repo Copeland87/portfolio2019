@@ -42,3 +42,13 @@
   border-width: 10px 30px 10px 0;
   border-color: transparent #ffffff transparent transparent;
 }
+
+.temp-span {
+  width: 100%;
+  color: white;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

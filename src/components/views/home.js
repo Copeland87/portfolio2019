@@ -15,6 +15,10 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+        <span className="temp-span">
+          Welcome to my new site. Currently I'm going through a build phase to
+          update the old site to React, look forward to the updates!
+        </span>
       </div>
     );
   }

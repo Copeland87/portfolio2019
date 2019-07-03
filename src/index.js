@@ -8,7 +8,7 @@ import Contact from "./components/views/contact";
 import Project from "./components/views/project";
 import Notfound from "./components/views/notfound";
 
-import Particles from "./components/particles/particles";
+// import Particles from "./components/particles/particles";
 
 import * as serviceWorker from "./serviceWorker";
 
