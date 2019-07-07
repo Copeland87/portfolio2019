@@ -25,10 +25,13 @@ class Form extends React.Component {
                 </div>
               )}
               {loading && <div>Loading...</div>}
-              {error && (
-                <div>Something went wrong. Please try again later.</div>
+              {error && <div className="form-after">... it didn't work.</div>}
+              {success && (
+                <div className="form-after">
+                  Thanks for your email! I will get back to you as soon as
+                  possible.
+                </div>
               )}
-              {success && <div>Thank you for contacting us!</div>}
             </div>
           );
         }}
