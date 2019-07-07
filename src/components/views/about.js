@@ -52,7 +52,7 @@ class About extends React.Component {
                 </div>
                 <div className="hobby-description">
                   <img className="hobby-image hi1" />
-                  <p>
+                  <p className="hobby-text">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -69,7 +69,7 @@ class About extends React.Component {
                 </div>
                 <div className="hobby-description">
                   <img className="hobby-image hi2" />
-                  <p>
+                  <p className="hobby-text">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -86,7 +86,7 @@ class About extends React.Component {
                 </div>
                 <div className="hobby-description">
                   <img className="hobby-image hi3" />
-                  <p>
+                  <p className="hobby-text">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -103,7 +103,7 @@ class About extends React.Component {
                 </div>
                 <div className="hobby-description">
                   <img className="hobby-image hi4" />
-                  <p>
+                  <p className="hobby-text">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
