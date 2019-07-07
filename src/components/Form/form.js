@@ -1,117 +1,38 @@
 import React from "react";
-
-import { css } from "emotion";
+import ZapierForm from "react-zapier-form";
 
 import "./form.css";
 
-const styles = css``;
-
 class Form extends React.Component {
-  state = {
-    name: "",
-    phoneNumber: "",
-    email: "",
-    textArea: ""
-  };
-
-  change = e => {
-    // this.props.onChange({ [e.target.name]: e.target.value });
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
-
-  onSubmit = e => {
-    e.preventDefault();
-    this.props.onSubmit(this.state);
-    // console.log(this.state);
-    this.setState({
-      name: "",
-      phoneNumber: "",
-      email: "",
-      textArea: ""
-    });
-    // this.props.onChange({
-    //   name: "",
-    //   phoneNumber: "",
-    //   email: "",
-    //   textArea: ""
-    // });
-  };
-
   render() {
     return (
-      <div className="form-container">
-        <form className="contact-form">
-          <div className="form-field">
-            <label htmlFor="name">Name</label>
-            <br />
-            <input
-              name="name"
-              placeholder="Name"
-              value={this.state.name}
-              onChange={e => this.change(e)}
-            />
-          </div>
-
-          <br />
-          <div>
-            <label htmlFor="phoneNumber">Phone Number</label>
-            <br />
-            <input
-              name="phoneNumber"
-              placeholder="Phone Number"
-              value={this.state.phoneNumber}
-              onChange={e => this.change(e)}
-            />
-          </div>
-
-          <br />
-          <div>
-            <label htmlFor="email">Email</label>
-            <br />
-            <input
-              name="email"
-              placeholder="Email"
-              value={this.state.email}
-              onChange={e => this.change(e)}
-            />
-          </div>
-
-          <br />
-          <div>
-            <label htmlFor="textArea">Questions || Comments</label>
-            <br />
-            <textarea
-              name="textArea"
-              placeholder="Words go here"
-              value={this.state.textArea}
-              onChange={e => this.change(e)}
-            />
-          </div>
-
-          <br />
-          <button className="ba-button" onClick={e => this.onSubmit(e)}>
-            {" "}
-            Submit{" "}
-          </button>
-        </form>
-      </div>
-      // simplified version above using onChange={e => this.change(e)}
-      // with
-      // change = e => {
-      //   this.setState({
-      //     [e.target.name]: e.target.value
-      //   });
-      // };
-
-      // <form>
-      //   <input
-      //     placeholder="First name"
-      //     value={this.state.firstName}
-      //     onChange={e => this.setState({ firstName: e.target.value })}
-      //   />
-      // </form>
+      <ZapierForm action="https://hooks.zapier.com/hooks/catch/3760745/oye2kln/">
+        {({ error, loading, success }) => {
+          return (
+            <div>
+              {!success && !loading && (
+                <div className="contact-form">
+                  <label>Contact Me</label>
+                  <input type="text" name="Name" placeholder="Name" />
+                  <input type="email" name="Email" placeholder="Email" />
+                  <input
+                    type="text"
+                    name="Phone Number"
+                    placeholder="Phone Number"
+                  />
+                  <textarea name="Message" placeholder="Your message" />
+                  <button>Submit</button>
+                </div>
+              )}
+              {loading && <div>Loading...</div>}
+              {error && (
+                <div>Something went wrong. Please try again later.</div>
+              )}
+              {success && <div>Thank you for contacting us!</div>}
+            </div>
+          );
+        }}
+      </ZapierForm>
     );
   }
 }

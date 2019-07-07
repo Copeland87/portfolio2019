@@ -42,10 +42,16 @@ label {
 
 input {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 textarea {
   width: 100%;
   min-height: 200px;
   margin: 0;
+}
+
+button {
+  float: right;
+  margin: 10px 0 0 0;
 }
