@@ -12,7 +12,7 @@
 .about-content {
   max-width: 100%;
   padding: 3% 4% 4% 4%;
-  min-height: 215px;
+  min-height: 325px;
 }
 
 .about-image {
@@ -89,6 +89,7 @@
   position: relative;
   width: 98%;
   padding-top: 25%;
+  margin-bottom: 10px;
   /* width: 100%;
     height: ;
     padding: 10px;
@@ -135,12 +136,18 @@
     margin: 0 auto;
     float: left;
   }
+  .about-text {
+    margin-top: 70px;
+  }
 }
 
 @media (max-width: 1440px) {
   .hobby-content {
     width: calc(100% / 2);
     float: left;
+  }
+  .about-text {
+    margin-top: 70px;
   }
 }
 
@@ -160,10 +167,29 @@
     width: calc(100% / 2);
     float: left;
   }
+  .about-text {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 425px) {
   .hobby-content {
     min-width: 100%;
+  }
+}
+
+@media (max-width: 397px) {
+  .about-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-image {
+    width: 200px;
+    height: 200px;
+    background-position-x: 41%;
+    background-position-y: 11%;
   }
 }
