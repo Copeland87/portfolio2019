@@ -1,7 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
+import {
+  Route,
+  Link,
+  BrowserRouter as Router,
+  Switch,
+  Redirect
+} from "react-router-dom";
 import Home from "./components/views/home";
 import About from "./components/views/about";
 import Contact from "./components/views/contact";

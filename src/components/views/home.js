@@ -16,8 +16,8 @@ class Home extends React.Component {
           </div>
         </div>
         <span className="temp-span">
-          Welcome to my new site. Currently I'm going through a build phase to
-          update the old site to React, look forward to the updates!
+          Welcome to the new site, I'm currently undergoing some build changes
+          to the website. Look forward to the updates!
         </span>
       </div>
     );
