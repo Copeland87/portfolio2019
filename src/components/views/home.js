@@ -16,7 +16,9 @@ class Home extends React.Component {
             </div>
           </div>
           <h3>
-            <a href={Pdf}>Resume</a>
+            <a href={Pdf} target="_blank">
+              Resume
+            </a>
           </h3>
         </div>
         <span className="temp-span">
