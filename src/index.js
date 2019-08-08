@@ -12,6 +12,7 @@ import Home from "./components/views/home";
 import About from "./components/views/about";
 import Contact from "./components/views/contact";
 import Project from "./components/views/project";
+import Resume from "./components/views/resume";
 import Notfound from "./components/views/notfound";
 
 // import Particles from "./components/particles/particles";
@@ -37,6 +38,9 @@ const routing = (
           <span>
             <Link to="/project">Projects</Link>
           </span>
+          <span>
+            <Link to="/resume">Resume</Link>
+          </span>
         </div>
       </div>
       <Switch>
@@ -44,6 +48,7 @@ const routing = (
         <Route path="/About" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/project" component={Project} />
+        <Route path="/resume" component={Resume} />
         <Route component={Notfound} />
       </Switch>
     </div>

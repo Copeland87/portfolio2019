@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import Pdf from "../../assets/documents/2019Resume.pdf";
 
 class Home extends React.Component {
   render() {
@@ -14,6 +15,9 @@ class Home extends React.Component {
               <span className="tri-right" />
             </div>
           </div>
+          <h3>
+            <a href={Pdf}>Resume</a>
+          </h3>
         </div>
         <span className="temp-span">
           Welcome to the new site, I'm currently undergoing some build changes
