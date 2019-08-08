@@ -18,9 +18,8 @@ class About extends React.Component {
               interesting to me. Lets see my life: my wife, my doge, video
               games, 80's music, and almost every movie ever made. On this site
               you'll find (eventually) links to projects and information about
-              me. If you have any questions feel free to use the form on the
-              contact page to ask questions, say what's up, ... or send random
-              message that make no sense (... you know who you are).
+              me. If you have any questions or just want to say hi feel free to
+              use the form found on the contact page.
             </p>
           </div>
 
