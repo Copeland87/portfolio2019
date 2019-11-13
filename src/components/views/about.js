@@ -6,7 +6,7 @@ class About extends React.Component {
     return (
       <div className="about-container">
         <div className="about-inner-container">
-          <h1>Me</h1>
+          <h1>About</h1>
           <div className="about-content">
             <div className="about-image" />
             <p className="about-text">
@@ -30,17 +30,17 @@ class About extends React.Component {
             <div className="hobby-container">
               <div className="hobby-content">
                 <div className="hobby-title">
-                  <h3>Coding</h3>
+                  <h3>Developement</h3>
                 </div>
                 <div className="hobby-description">
                   <img className="hobby-image hi1" />
                   <p className="hobby-text">
-                    Computer code has to be at this point a life pursuit. I
-                    started with basic HTML layouts in yahoo pages and I'm still
-                    trying to learn something new with every day. Different
-                    languages and frameworks all offer their own solutions to
-                    building something new which is why I always have 30 tabs
-                    open.
+                    Building new things has always been a life pursuit for me,
+                    this is especially true with computer code. I started with
+                    basic HTML layouts in yahoo pages and I'm still trying to
+                    learn something new with every day. Different languages and
+                    frameworks all offer their own solutions to building
+                    something new which is why I always have 30 tabs open.
                   </p>
                 </div>
               </div>

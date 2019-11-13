@@ -1,0 +1,25 @@
+.formComponent {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.formEntry {
+  display: inline-block;
+}
+
+.cardList {
+  width: 90%;
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+.gitCard {
+  width: 50%;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.gitLink {
+  margin: 0 auto;
+}

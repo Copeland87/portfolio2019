@@ -10,9 +10,10 @@
 }
 
 .about-content {
-  max-width: 100%;
-  padding: 3% 4% 4% 4%;
+  max-width: 90%;
+  /* margin: 3% 4% 4% 4%; */
   min-height: 325px;
+  margin: 0 auto;
 }
 
 .about-image {
@@ -108,8 +109,8 @@
 
 .hi1 {
   background-image: url(../../assets/images/mariopuns.png);
-  background-position-x: 1%;
-  background-position-y: 31%;
+  background-position-x: 44%;
+  background-position-y: 36%;
 }
 
 .hi2 {
@@ -141,7 +142,7 @@
   }
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .hobby-content {
     width: calc(100% / 2);
     float: left;
@@ -149,7 +150,7 @@
   .about-text {
     margin-top: 70px;
   }
-}
+} */
 
 @media (max-width: 1024px) {
   .hobby-content {
@@ -168,7 +169,7 @@
     float: left;
   }
   .about-text {
-    margin-top: 0;
+    margin: 50px 0 50px 0;
   }
 }
 
