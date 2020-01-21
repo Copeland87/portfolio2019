@@ -8,6 +8,10 @@
   display: inline-block;
 }
 
+.cardText {
+  color: #ffffff;
+}
+
 .cardList {
   display: flex;
   align-items: center;

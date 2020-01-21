@@ -8,12 +8,24 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
+
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
+
+// pages
 import Home from "./components/views/home";
 import About from "./components/views/about";
 import Contact from "./components/views/contact";
-import Project from "./components/views/project";
-import Test from "./components/views/subviews/test";
+// import Current from "./components/views/subviews/current";
 import Notfound from "./components/views/notfound";
+
+import Project from "./components/views/project";
+// project sublinks
+import Cards from "./components/views/projects/gitcards/cardapp";
 
 // import Particles from "./components/particles/particles";
 
@@ -38,17 +50,16 @@ const routing = (
           <span>
             <Link to="/project">Projects</Link>
           </span>
-          <span>
-            <Link to="/test">test</Link>
-          </span>
         </div>
       </div>
       <Switch>
+        {/* Nav Routes */}
         <Route exact path="/" component={Home} />
         <Route path="/About" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/project" component={Project} />
-        <Route path="/test" component={Test} />
+        {/* Non Nav Routes */}
+        <Route path="/GitCards" component={Cards} />
         <Route component={Notfound} />
       </Switch>
     </div>

@@ -1,6 +1,15 @@
 import React from "react";
 import Axios from "axios";
-import "./test.css";
+
+import {
+  Route,
+  Link,
+  BrowserRouter as Router,
+  Switch,
+  Redirect
+} from "react-router-dom";
+
+import "./cardapp.css";
 
 const CardList = props => (
   <div className="cardList">
@@ -21,6 +30,7 @@ class Card extends React.Component {
           <a href={profile.html_url} target="_blank" className="gitLink">
             {profile.name}
           </a>
+          <pre className="cardText">{profile.company}</pre>
         </div>
       </div>
     );
@@ -43,7 +53,9 @@ class Form extends React.Component {
       <form className="formComponent" onSubmit={this.handleSubmit}>
         <pre style={{ color: "white" }}>
           {" "}
-          Welcome to the GitHub Quick Card Lookup{" "}
+          Welcome to the GitHub Quick Card Lookup, <br /> Below you can enter a
+          GitHub users ID and pull a link as well as some information directly
+          to the page!{" "}
         </pre>
         <div className="formEntry">
           <input
@@ -60,7 +72,7 @@ class Form extends React.Component {
   }
 }
 
-class Test extends React.Component {
+class Cards extends React.Component {
   state = {
     profiles: []
   };
@@ -72,7 +84,10 @@ class Test extends React.Component {
   render() {
     return (
       <div>
-        <pre> Another Card App... So Original </pre>
+        <span>
+          <Link to="/project">Back to Projects</Link>
+        </span>
+        {/* <pre> Another Card App... So Original </pre> */}
         <div className="header">{this.props.title}</div>
         <Form onSubmit={this.addNewProfile} />
         <CardList profiles={this.state.profiles} />
@@ -81,4 +96,4 @@ class Test extends React.Component {
   }
 }
 
-export default Test;
+export default Cards;
