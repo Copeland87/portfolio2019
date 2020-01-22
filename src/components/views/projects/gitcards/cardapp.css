@@ -4,12 +4,20 @@
   margin-bottom: 40px;
 }
 
+.cardInstruct {
+  max-width: 100%;
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+
 .formEntry {
   display: inline-block;
 }
 
 .cardText {
   color: #ffffff;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .cardList {

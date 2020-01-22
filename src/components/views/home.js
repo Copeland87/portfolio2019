@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import Pdf from "../../assets/documents/2019Resume3.2.pdf";
+import Pdf from "../../assets/documents/2020Resume3.3.pdf";
 
 class Home extends React.Component {
   render() {

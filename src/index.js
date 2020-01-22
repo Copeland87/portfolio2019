@@ -26,6 +26,7 @@ import Notfound from "./components/views/notfound";
 import Project from "./components/views/project";
 // project sublinks
 import Cards from "./components/views/projects/gitcards/cardapp";
+import Tetris from "./components/views/projects/tetris/tetris";
 
 // import Particles from "./components/particles/particles";
 
@@ -60,6 +61,7 @@ const routing = (
         <Route path="/project" component={Project} />
         {/* Non Nav Routes */}
         <Route path="/GitCards" component={Cards} />
+        <Route path="/Tetris" component={Tetris} />
         <Route component={Notfound} />
       </Switch>
     </div>

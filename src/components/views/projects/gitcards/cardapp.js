@@ -30,7 +30,7 @@ class Card extends React.Component {
           <a href={profile.html_url} target="_blank" className="gitLink">
             {profile.name}
           </a>
-          <pre className="cardText">{profile.company}</pre>
+          <p className="cardText">{profile.company}</p>
         </div>
       </div>
     );
@@ -51,12 +51,12 @@ class Form extends React.Component {
   render() {
     return (
       <form className="formComponent" onSubmit={this.handleSubmit}>
-        <pre style={{ color: "white" }}>
+        <p className="cardInstruct" style={{ color: "white" }}>
           {" "}
-          Welcome to the GitHub Quick Card Lookup, <br /> Below you can enter a
-          GitHub users ID and pull a link as well as some information directly
-          to the page!{" "}
-        </pre>
+          Welcome to the GitHub Quick Card Lookup, below you can enter a GitHub
+          users ID and pull a link as well as some information directly to the
+          page!{" "}
+        </p>
         <div className="formEntry">
           <input
             type="text"
