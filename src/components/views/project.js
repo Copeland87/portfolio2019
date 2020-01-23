@@ -13,12 +13,22 @@ class Project extends React.Component {
     return (
       <div>
         <h1>Projects</h1>
-        <span>
-          <Link to="/GitCards">GitHub Cards</Link>
-        </span>
-        <span>
-          <Link to="/Tetris">Tetris (Coming Soon)</Link>
-        </span>
+        <div>
+          <span>
+            <Link to="/GitCards">GitHub Cards</Link>
+          </span>
+          <span>
+            <Link to="/Tetris">Tetris (Coming Soon)</Link>
+          </span>
+          {/* <span>
+            <Link to="/D6">D6 Animated Header</Link>
+          </span> */}
+          <span>
+            <a href="https://www.copeland.work" style={{ textDecoration: "" }}>
+              Component List
+            </a>
+          </span>
+        </div>
         <div className="hero-text">
           <p>
             Welcome to the projects section of my site. Currently this section
