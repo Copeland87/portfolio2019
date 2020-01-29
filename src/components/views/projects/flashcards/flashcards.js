@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import Card from "./cards/cards";
-import Draw from "./drawbutton/drawbutton";
+import Draw from "./buttons/drawbutton";
 import "./flashcards.css";
 
 import firebase from "firebase/app";
