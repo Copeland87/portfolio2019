@@ -22,12 +22,13 @@ import About from "./components/views/about";
 import Contact from "./components/views/contact";
 // import Current from "./components/views/subviews/current";
 import Notfound from "./components/views/notfound";
-
 import Project from "./components/views/project";
+
 // project sublinks
 import Cards from "./components/views/projects/gitcards/cardapp";
 import Tetris from "./components/views/projects/tetris/tetris";
-import D6 from "./components/views/projects/d6header/d6";
+import FlashCards from "./components/views/projects/flashcards/flashcards";
+import ModalDemo from "./components/views/projects/modals/modaldemo";
 
 // import Particles from "./components/particles/particles";
 
@@ -63,7 +64,8 @@ const routing = (
         {/* Non Nav Routes */}
         <Route path="/GitCards" component={Cards} />
         <Route path="/Tetris" component={Tetris} />
-        <Route path="/D6" component={D6} />
+        <Route path="/FlashCards" component={FlashCards} />
+        <Route path="/ModalDemo" component={ModalDemo} />
         <Route component={Notfound} />
       </Switch>
     </div>

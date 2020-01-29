@@ -20,6 +20,12 @@ class Project extends React.Component {
           <span>
             <Link to="/Tetris">Tetris (Coming Soon)</Link>
           </span>
+          <span>
+            <Link to="/FlashCards">FlashCards</Link>
+          </span>
+          {/* <span>
+            <Link to="/ModalDemo">Modals</Link>
+          </span> */}
           {/* <span>
             <Link to="/D6">D6 Animated Header</Link>
           </span> */}

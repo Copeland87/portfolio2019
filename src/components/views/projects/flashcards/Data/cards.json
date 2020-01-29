@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "term": "html",
+      "definition": "Hypertext Markup Language"
+    },
+    {
+      "id": 2,
+      "term": "CSS",
+      "definition": "Cascading Style Sheets"
+    },
+    {
+      "id": 3,
+      "term": "JS",
+      "definition": "Javascript"
+    }
+  ]
+}
