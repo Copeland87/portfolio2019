@@ -23,6 +23,9 @@ class Project extends React.Component {
           <span>
             <Link to="/FlashCards">FlashCards</Link>
           </span>
+          <span>
+            <Link to="/ExampleDB">Database</Link>
+          </span>
           {/* <span>
             <Link to="/ModalDemo">Modals</Link>
           </span> */}

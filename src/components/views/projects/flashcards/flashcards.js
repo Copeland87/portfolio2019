@@ -72,6 +72,14 @@ class FlashCards extends React.Component {
         <span>
           <Link to="/project">Back to Projects</Link>
         </span>
+        <div>
+          <p>
+            This is a flash card application (not currently complete) that pulls
+            from firebase. The original idea of using a css hover is working out
+            terribly so I'll be adding a button to manually flip the card and a
+            way to push more cards in to the database soon.
+          </p>
+        </div>
         <div className="hero-text">
           <div className="cardRow">
             <Card

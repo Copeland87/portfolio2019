@@ -28,6 +28,8 @@ import Project from "./components/views/project";
 import Cards from "./components/views/projects/gitcards/cardapp";
 import Tetris from "./components/views/projects/tetris/tetris";
 import FlashCards from "./components/views/projects/flashcards/flashcards";
+import FlashForm from "./components/views/projects/flashcards/forms/flashcardform";
+import ExampleDB from "./components/views/projects/basicdatabase/exampleDB";
 import ModalDemo from "./components/views/projects/modals/modaldemo";
 
 // import Particles from "./components/particles/particles";
@@ -65,6 +67,8 @@ const routing = (
         <Route path="/GitCards" component={Cards} />
         <Route path="/Tetris" component={Tetris} />
         <Route path="/FlashCards" component={FlashCards} />
+        <Route path="/FlashForm" component={FlashForm} />
+        <Route path="/ExampleDB" component={ExampleDB} />
         <Route path="/ModalDemo" component={ModalDemo} />
         <Route component={Notfound} />
       </Switch>
