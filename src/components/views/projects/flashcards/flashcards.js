@@ -26,7 +26,8 @@ class FlashCards extends React.Component {
       this.app = firebase.initializeApp(DB_CONFIG);
     }
 
-    this.database = this.app
+    // this.database = this.app will throw an error in your face and steal your wallet
+    this.database = firebase
       .database()
       .ref()
       .child("cards");
@@ -84,6 +85,11 @@ class FlashCards extends React.Component {
           </p>
         </div>
         <div className="hero-text">
+          <div>
+            <p>
+              <Link to="/FlashForm">Click here to add a new card</Link>
+            </p>
+          </div>
           <div className="cardRow">
             <Card
               term={this.state.currentCard.term}
