@@ -20,7 +20,9 @@ class FlashForm extends React.Component {
   constructor() {
     super();
 
-    this.app = firebase.initializeApp(DB_CONFIG);
+    if (!firebase.apps.length) {
+      this.app = firebase.initializeApp(DB_CONFIG);
+    }
 
     this.state = {
       term: "",
@@ -50,16 +52,20 @@ class FlashForm extends React.Component {
     });
   }
 
+  componentDidMount() {
+    let newState = [];
+    this.setState({
+      cards: newState
+    });
+  }
+
   render() {
     return (
       <div>
         <span>
           <Link to="/project">Back to Projects</Link>
         </span>
-        <div>
-          <div>Boop</div>
-          <div>Click Here To Add A Card</div>
-        </div>
+        <div>boop</div>
         <div className="hero-text">
           <div>
             <form onSubmit={this.handleSubmit}>
@@ -70,8 +76,8 @@ class FlashForm extends React.Component {
                 onChange={this.handleChange}
                 value={this.state.term}
               />
-              <input
-                type="text"
+              <textarea
+                type="textarea"
                 name="definition"
                 placeholder="Definition"
                 onChange={this.handleChange}

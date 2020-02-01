@@ -20,7 +20,9 @@ class ExampleDB extends React.Component {
   constructor() {
     super();
 
-    this.app = firebase.initializeApp(DB_CONFIG);
+    if (!firebase.apps.length) {
+      this.app = firebase.initializeApp(DB_CONFIG);
+    }
 
     this.state = {
       currentRecipe: "",
@@ -97,7 +99,7 @@ class ExampleDB extends React.Component {
             <input
               type="text"
               name="currentRecipe"
-              placeholder="What are you bringing?"
+              placeholder="What's your recipe?"
               onChange={this.handleChange}
               value={this.state.currentRecipe}
             />
@@ -110,10 +112,10 @@ class ExampleDB extends React.Component {
               return (
                 <li className="dataLine" key={item.id}>
                   <div className="dataItem">
-                    <span>Recipe : {item.title}</span>
+                    <span>Author : {item.user}</span>
                   </div>
                   <div className="dataItem">
-                    <span>Author : {item.user}</span>
+                    <span>Recipe : {item.title}</span>
                   </div>
                   <div className="dataItem">
                     <button onClick={() => this.removeItem(item.id)}>

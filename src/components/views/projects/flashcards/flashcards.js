@@ -22,7 +22,10 @@ class FlashCards extends React.Component {
   constructor(props) {
     super(props);
 
-    this.app = firebase.initializeApp(DB_CONFIG);
+    if (!firebase.apps.length) {
+      this.app = firebase.initializeApp(DB_CONFIG);
+    }
+
     this.database = this.app
       .database()
       .ref()
