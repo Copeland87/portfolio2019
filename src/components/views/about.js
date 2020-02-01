@@ -33,7 +33,7 @@ class About extends React.Component {
                   <h3>Developement</h3>
                 </div>
                 <div className="hobby-description">
-                  <img className="hobby-image hi1" alt="mario coding pun" />
+                  <img className="hobby-image hi1" />
                   <p className="hobby-text">
                     Building new things has always been a life pursuit for me,
                     this is especially true with computer code. I started with
@@ -49,7 +49,7 @@ class About extends React.Component {
                   <h3>Motorcycles</h3>
                 </div>
                 <div className="hobby-description">
-                  <img className="hobby-image hi2" alt="motorcycle" />
+                  <img className="hobby-image hi2" />
                   <p className="hobby-text">
                     Getting my first bike was a challenge since everyone in my
                     family had a no mentality but at the same time owned or had
@@ -64,7 +64,7 @@ class About extends React.Component {
                   <h3>Wood Working</h3>
                 </div>
                 <div className="hobby-description">
-                  <img className="hobby-image hi3" alt="wood working" />
+                  <img className="hobby-image hi3" />
                   <p className="hobby-text">
                     Wood working for me came about as a need in my life for
                     something that functioned well and endured the time and
@@ -79,7 +79,7 @@ class About extends React.Component {
                   <h3>Photography</h3>
                 </div>
                 <div className="hobby-description">
-                  <img className="hobby-image hi4" alt="Ocean Cliffs" />
+                  <img className="hobby-image hi4" />
                   <p className="hobby-text">
                     I got in to photography as a secondary hobby to building
                     websites and applications. It's pretty cheese, but I thought
