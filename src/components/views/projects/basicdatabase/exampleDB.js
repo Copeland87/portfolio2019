@@ -23,8 +23,8 @@ class ExampleDB extends React.Component {
     this.app = firebase.initializeApp(DB_CONFIG);
 
     this.state = {
-      currentItem: "",
-      username: "",
+      currentRecipe: "",
+      author: "",
       items: []
     };
     this.handleChange = this.handleChange.bind(this);
@@ -41,13 +41,13 @@ class ExampleDB extends React.Component {
     e.preventDefault();
     const itemsRef = firebase.database().ref("items");
     const item = {
-      title: this.state.currentItem,
-      user: this.state.username
+      title: this.state.currentRecipe,
+      user: this.state.author
     };
     itemsRef.push(item);
     this.setState({
-      currentItem: "",
-      username: ""
+      currentRecipe: "",
+      author: ""
     });
   }
 
@@ -85,35 +85,41 @@ class ExampleDB extends React.Component {
           <Link to="/project">Back to Projects</Link>
         </span>
         <div></div>
-        <div className="hero-text">
+        <div className="dataForm">
           <form onSubmit={this.handleSubmit}>
             <input
               type="text"
-              name="username"
+              name="author"
               placeholder="What's your name?"
               onChange={this.handleChange}
-              value={this.state.username}
+              value={this.state.author}
             />
             <input
               type="text"
-              name="currentItem"
+              name="currentRecipe"
               placeholder="What are you bringing?"
               onChange={this.handleChange}
-              value={this.state.currentItem}
+              value={this.state.currentRecipe}
             />
             <button>Add Item</button>
           </form>
         </div>
-        <div>
-          <ul>
+        <div className="dataReturn">
+          <ul className="dataUl">
             {this.state.items.map(item => {
               return (
-                <li key={item.id}>
-                  <h3>{item.title}</h3>
-                  <p>brought by: {item.user}</p>
-                  <button onClick={() => this.removeItem(item.id)}>
-                    Remove Item
-                  </button>
+                <li className="dataLine" key={item.id}>
+                  <div className="dataItem">
+                    <span>Recipe : {item.title}</span>
+                  </div>
+                  <div className="dataItem">
+                    <span>Author : {item.user}</span>
+                  </div>
+                  <div className="dataItem">
+                    <button onClick={() => this.removeItem(item.id)}>
+                      Remove Item
+                    </button>
+                  </div>
                 </li>
               );
             })}
