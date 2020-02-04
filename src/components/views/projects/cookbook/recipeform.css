@@ -1,0 +1,36 @@
+.dataForm {
+  max-width: 425px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.formOption {
+  width: 100%;
+  margin: 20px 0 20px 0;
+  border: 2px solid #39bebb;
+}
+
+.dataReturn {
+  max-width: 425px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.dataLine {
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 40px 0 40px 0;
+  border: 2px solid #39bebb;
+  background-color: #ffffff;
+}
+
+.dataItem {
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+}
+
+.dataUl {
+  padding: 0;
+}

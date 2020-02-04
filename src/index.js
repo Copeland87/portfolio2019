@@ -30,7 +30,8 @@ import Tetris from "./components/views/projects/tetris/tetris";
 import FlashCards from "./components/views/projects/flashcards/flashcards";
 import FlashForm from "./components/views/projects/flashcards/forms/flashcardform";
 import ExampleDB from "./components/views/projects/basicdatabase/exampleDB";
-import ModalDemo from "./components/views/projects/modals/modaldemo";
+import CookBook from "./components/views/projects/cookbook/cookbook";
+import RecipeForm from "./components/views/projects/cookbook/recipeform";
 
 // import Particles from "./components/particles/particles";
 
@@ -69,7 +70,10 @@ const routing = (
         <Route path="/FlashCards" component={FlashCards} />
         <Route path="/FlashForm" component={FlashForm} />
         <Route path="/ExampleDB" component={ExampleDB} />
-        <Route path="/ModalDemo" component={ModalDemo} />
+        {/* Recipes */}
+        <Route path="/CookBook" component={CookBook} />
+        <Route path="/RecipeForm" component={RecipeForm} />
+
         <Route component={Notfound} />
       </Switch>
     </div>
