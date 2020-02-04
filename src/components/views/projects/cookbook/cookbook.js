@@ -18,7 +18,16 @@ class CookBook extends React.Component {
         <span>
           <Link to="/project">Back to Projects</Link>
         </span>
-        <div className="highLight">boop </div>
+        <div className="highLight">
+          Boop, ahh the beginning of a new project. There isn't anything to
+          currently show on this page while I'm setting up the database and
+          while I will sometimes give out the link to add to a random database
+          this one is important as it is part of a larger project. If you have
+          any questions about this project feel free to let me know{" "}
+          <Link className="boxLink" to="/contact">
+            here!
+          </Link>
+        </div>
       </div>
     );
   }
