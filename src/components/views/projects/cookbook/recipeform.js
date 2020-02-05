@@ -29,6 +29,7 @@ class RecipeForm extends React.Component {
       category: "",
       ingredients: "",
       instructions: "",
+      miscellaneous: "",
       items: []
     };
     this.handleChange = this.handleChange.bind(this);
@@ -49,7 +50,8 @@ class RecipeForm extends React.Component {
       author: this.state.author,
       category: this.state.category,
       ingredients: this.state.ingredients,
-      instructions: this.state.instructions
+      instructions: this.state.instructions,
+      miscellaneous: this.state.miscellaneous
     };
     itemsRef.push(item);
     this.setState({
@@ -57,7 +59,8 @@ class RecipeForm extends React.Component {
       author: "",
       category: "",
       ingredients: "",
-      instructions: ""
+      instructions: "",
+      miscellaneous: ""
     });
   }
 
@@ -76,7 +79,8 @@ class RecipeForm extends React.Component {
           author: items[item].author,
           category: items[item].category,
           ingredients: items[item].ingredients,
-          instructions: items[item].instructions
+          instructions: items[item].instructions,
+          miscellaneous: items[item].miscellaneous
         });
       }
       this.setState({
@@ -116,7 +120,6 @@ class RecipeForm extends React.Component {
               placeholder="Recipe Creator"
               onChange={this.handleChange}
               value={this.state.author}
-              required
             />
             <select
               name="category"
@@ -160,6 +163,14 @@ class RecipeForm extends React.Component {
               value={this.state.instructions}
               required
             />
+            <textarea
+              className="formOption"
+              type="text"
+              name="miscellaneous"
+              placeholder="Miscellaneous"
+              onChange={this.handleChange}
+              value={this.state.miscellaneous}
+            />
             <button>Add Recipe</button>
           </form>
         </div>
@@ -182,6 +193,9 @@ class RecipeForm extends React.Component {
                   </div>
                   <div className="dataItem">
                     <span>Instructions : {item.instructions}</span>
+                  </div>
+                  <div className="dataItem">
+                    <span>Miscellaneous : {item.miscellaneous}</span>
                   </div>
                   <div className="dataItem">
                     <button onClick={() => this.removeItem(item.id)}>
