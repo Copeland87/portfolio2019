@@ -26,7 +26,7 @@ class About extends React.Component {
           <div className="about-divider" />
 
           <div className="hobby-section">
-            <h1>Hobbies</h1>
+            <h1 className="page-title">Hobbies</h1>
             <div className="hobby-container">
               <div className="hobby-content">
                 <div className="hobby-title">

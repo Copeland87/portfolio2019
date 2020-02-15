@@ -8,12 +8,14 @@ import {
   Redirect
 } from "react-router-dom";
 
+import "./project.css";
+
 class Project extends React.Component {
   render() {
     return (
       <div>
-        <h1>Projects</h1>
-        <div>
+        <h1 className="page-title">Projects</h1>
+        <div className="project-collection">
           <span>
             <Link to="/GitCards">GitHub Cards</Link>
           </span>
@@ -38,7 +40,7 @@ class Project extends React.Component {
             </a>
           </span>
         </div>
-        <div className="hero-text">
+        <div className="hero-text02">
           <p>
             Welcome to the projects section of my site. Currently this section
             is under maintenance as I'm working on moving all of my projects to

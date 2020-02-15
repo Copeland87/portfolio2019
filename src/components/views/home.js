@@ -7,7 +7,7 @@ class Home extends React.Component {
     return (
       <div className="home-container">
         <div className="hero-text">
-          <h1>Zac Copeland</h1>
+          <h1 className="home-text">Zac Copeland</h1>
           <div className="title-collection">
             <div>
               <span className="tri-left" />
@@ -16,7 +16,7 @@ class Home extends React.Component {
             </div>
           </div>
           <h3>
-            <a href={Pdf} target="_blank">
+            <a href={Pdf} target="_blank" className="home-text">
               Resume
             </a>
           </h3>

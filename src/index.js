@@ -46,7 +46,7 @@ const routing = (
             <Link to="/">Home</Link>
           </span>
         </div>
-        <div>
+        <div className="page-links">
           <span>
             <Link to="/About">About</Link>
           </span>

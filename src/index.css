@@ -14,6 +14,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; */
+
+  overflow-x: hidden;
 }
 
 h1 {
@@ -99,7 +101,7 @@ a:hover:before {
 }
 
 .header-collection {
-  width: 100vw;
+  width: 100%;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -109,4 +111,10 @@ a:hover:before {
   background-position-y: 22%;
   background-size: cover; */
   height: 4vh;
+  margin: 15px 0 15px 0;
+  overflow: hidden;
+}
+
+.page-links {
+  overflow: hidden;
 }
