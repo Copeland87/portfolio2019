@@ -32,6 +32,8 @@ import FlashForm from "./components/views/projects/flashcards/forms/flashcardfor
 import ExampleDB from "./components/views/projects/basicdatabase/exampleDB";
 import CookBook from "./components/views/projects/cookbook/cookbook";
 import RecipeForm from "./components/views/projects/cookbook/recipeform";
+// Edamam Recipe App
+import RecipeApp02 from "./components/views/projects/recipeApp/recipeApp";
 
 // import Particles from "./components/particles/particles";
 
@@ -73,6 +75,8 @@ const routing = (
         {/* Recipes */}
         <Route path="/CookBook" component={CookBook} />
         <Route path="/RecipeForm" component={RecipeForm} />
+        {/* RecipeApp02 */}
+        <Route path="/RecipeApp02" component={RecipeApp02} />
 
         <Route component={Notfound} />
       </Switch>
