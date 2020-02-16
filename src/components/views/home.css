@@ -4,7 +4,7 @@
 }
 
 /* Place text in the middle of the image */
-.hero-text {
+/* .hero-text {
   background-color: #ffffff;
   text-align: center;
   position: absolute;
@@ -13,7 +13,7 @@
   transform: translate(-50%, -50%);
   color: white;
   padding: 20px 0 20px 0;
-}
+} */
 
 /* Center Intro CSS */
 .title-collection {

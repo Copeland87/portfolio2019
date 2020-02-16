@@ -31,16 +31,16 @@ class Project extends React.Component {
           <span>
             <Link to="/CookBook">Recipes</Link>
           </span>
-          {/* <span>
-            <Link to="/D6">D6 Animated Header</Link>
-          </span> */}
+          <span>
+            <Link to="/RecipeApp02">RecipesApp-2</Link>
+          </span>
           <span>
             <a href="https://www.copeland.work" style={{ textDecoration: "" }}>
               Component List
             </a>
           </span>
         </div>
-        <div className="hero-text02">
+        <div className="hero-inverse">
           <p>
             Welcome to the projects section of my site. Currently this section
             is under maintenance as I'm working on moving all of my projects to

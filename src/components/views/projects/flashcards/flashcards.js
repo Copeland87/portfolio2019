@@ -84,7 +84,7 @@ class FlashCards extends React.Component {
             way to push more cards in to the database soon.
           </p>
         </div>
-        <div className="hero-text-flashcards">
+        <div className="hero-inverse">
           <div>
             <p>
               <Link to="/FlashForm">Click here to add a new card</Link>
