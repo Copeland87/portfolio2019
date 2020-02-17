@@ -43,21 +43,23 @@ const routing = (
   <Router>
     <div className="page-container">
       <div className="header-collection">
-        <div>
-          <span>
-            <Link to="/">Home</Link>
-          </span>
-        </div>
-        <div className="page-links">
-          <span>
-            <Link to="/About">About</Link>
-          </span>
-          <span>
-            <Link to="/contact">Contact</Link>
-          </span>
-          <span>
-            <Link to="/project">Projects</Link>
-          </span>
+        <div className="header-row">
+          <div>
+            <span>
+              <Link to="/">Home</Link>
+            </span>
+          </div>
+          <div className="page-links">
+            <span>
+              <Link to="/About">About</Link>
+            </span>
+            <span>
+              <Link to="/contact">Contact</Link>
+            </span>
+            <span>
+              <Link to="/project">Projects</Link>
+            </span>
+          </div>
         </div>
       </div>
       <Switch>

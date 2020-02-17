@@ -21,10 +21,7 @@ class Home extends React.Component {
             </a>
           </h3>
         </div>
-        <span className="temp-span">
-          Welcome to the new site, I'm currently undergoing some build changes
-          to the website. Look forward to the updates!
-        </span>
+        <span className="temp-span"></span>
       </div>
     );
   }

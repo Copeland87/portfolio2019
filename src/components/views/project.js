@@ -16,38 +16,28 @@ class Project extends React.Component {
       <div>
         <h1 className="page-title">Projects</h1>
         <div className="project-collection">
-          <span>
+          <span className="project-button">
             <Link to="/GitCards">GitHub Cards</Link>
           </span>
-          {/* <span>
-            <Link to="/Tetris">Tetris (Coming Soon)</Link>
-          </span> */}
-          <span>
+          <span className="project-button">
             <Link to="/FlashCards">FlashCards</Link>
           </span>
-          <span>
+          <span className="project-button">
             <Link to="/ExampleDB">Database</Link>
           </span>
-          <span>
+          <span className="project-button">
             <Link to="/CookBook">Recipes</Link>
           </span>
-          <span>
+          <span className="project-button">
             <Link to="/RecipeApp02">RecipesApp-2</Link>
           </span>
-          <span>
+          <span className="project-button">
             <a href="https://www.copeland.work" style={{ textDecoration: "" }}>
               Component List
             </a>
           </span>
         </div>
-        <div className="hero-inverse">
-          <p>
-            Welcome to the projects section of my site. Currently this section
-            is under maintenance as I'm working on moving all of my projects to
-            this site. As well as building out new things for myself and
-            clients.
-          </p>
-        </div>
+
         {/* <div className="hero-text">
           <p>
             Welcome to the projects page. At this point in time this section is

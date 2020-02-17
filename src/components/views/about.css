@@ -2,9 +2,13 @@
   margin: 30px;
 }
 
+.about-title {
+  margin-bottom: 50px;
+}
+
 .about-container {
   background-color: transparent;
-  height: 96vh;
+  /* height: 96vh; */
   max-width: 100%;
 }
 
@@ -14,7 +18,7 @@
 }
 
 .about-content {
-  max-width: 90%;
+  max-width: 1100px;
   /* margin: 3% 4% 4% 4%; */
   min-height: 325px;
   margin: 0 auto;
@@ -60,34 +64,36 @@
 
 .hobby-section {
   margin-top: 2vh;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
 }
 
 .hobby-container {
   max-width: 100%;
   padding: 3% 4% 4% 4%;
   min-height: 215px;
-  /* display: flex;
-    justify-content: space-around; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .hobby-content {
-  background-color: transparent;
+  width: 500px;
+  height: 350px;
+  margin-bottom: 50px;
+  border: 2px solid #ffffff;
 }
 
 .hobby-title {
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  width: 100%;
   color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .hobby-description {
-  padding: 3px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 100%;
+  padding: 10px;
+  height: 180px;
 }
 
 .hobby-image {
@@ -109,7 +115,8 @@
 }
 
 .hobby-text {
-  width: 98%;
+  width: 100%;
+  margin: 0;
 }
 
 .hi1 {
@@ -136,7 +143,7 @@
   background-position-y: 36%;
 }
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
   .hobby-content {
     width: calc(100% / 4);
     margin: 0 auto;
@@ -147,7 +154,7 @@
   }
 }
 
-/* @media (max-width: 1440px) {
+ @media (max-width: 1440px) {
   .hobby-content {
     width: calc(100% / 2);
     float: left;
@@ -155,7 +162,7 @@
   .about-text {
     margin-top: 70px;
   }
-} */
+}
 
 @media (max-width: 1024px) {
   .hobby-content {
@@ -199,3 +206,5 @@
     background-position-y: 11%;
   }
 }
+
+ */
