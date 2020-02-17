@@ -6,21 +6,42 @@ class About extends React.Component {
     return (
       <div className="about-container">
         <div className="about-inner-container">
-          <h1>About</h1>
-          <div className="about-content">
-            <div className="about-image" />
-            <p className="about-text">
-              My name is Zac Copeland, I'm a programmer who recently moved to
-              California after marrying the love of my life. This is my first
-              time living anywhere further west than Kansas and so far, it's
-              pretty awesome. I have an endless number of hobbies, unfortunately
-              for me anything to do with building or creating something new is
-              interesting to me. Lets see my life: my wife, my doge, video
-              games, 80's music, and almost every movie ever made. On this site
-              you'll find (eventually) links to projects and information about
-              me. If you have any questions or just want to say hi feel free to
-              use the form found on the contact page.
-            </p>
+          {/* top section */}
+          <div class="about-top-container">
+            <h1 className="about-title">About</h1>
+            <div className="about-content">
+              <div className="about-image" />
+              <p className="about-text">
+                My name is Zac Copeland, I'm a programmer who recently moved to
+                California after marrying the love of my life. This is my first
+                time living anywhere further west than Kansas and so far, it's
+                pretty awesome. I have an endless number of hobbies
+                (unfortunately for me), anything to do with building or creating
+                something new is interesting to me. Lets see my life: my wife,
+                my doge, video games, 80's music, and almost every movie ever
+                made. On this site you'll find links to projects that I've built
+                out or that I'm currently working on. I start building websites
+                and web applications at a pretty young age but I didn't
+                seriously start working at it until 2017. I studied fullstack
+                through a program at the University of Kansas and did my
+                internship at a company in Olathe Kansas on a support
+                development team where I made some of the best friends I'll ever
+                have. During my time there my attention was mostly focused on
+                building out new designs and applications for existing websites.
+                I've worked in everything from a proprietary PHP based CMS to
+                MEAN and MERN stacks. Currently with my time I'm working towards
+                learning more and building out new projects that I find
+                interesting which can vary on a daily basis. One day it's
+                building a digital cookbook and the next day it could be working
+                towards a mini game that I can play in the free time I don't
+                have. Currently I'm working as a mentor at a Code Ninja's
+                academy teaching the younger generation the joys of hunting for
+                a missing semicolon. So far I've enjoyed teaching but I'm still
+                looking for a position working in either website design or web
+                applications development where I can continue to grow my skill
+                sets.
+              </p>
+            </div>
           </div>
 
           <div className="about-divider" />
