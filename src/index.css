@@ -119,7 +119,7 @@ a:hover:before {
 .page-container {
   /* min-width: 100vw; */
   max-width: 2300px;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0 auto;
 }
 
