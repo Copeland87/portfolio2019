@@ -71,7 +71,7 @@ const RecipeApp02 = () => {
             className="search-bar"
             type="text"
             value={search}
-            placeholder="Enter an Ingredient here... like banana"
+            placeholder="Enter an Ingredient here or Dish"
             onChange={updateSearch}
           />{" "}
           <button className="search-button" type="submit">
