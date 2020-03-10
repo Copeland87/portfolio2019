@@ -65,20 +65,20 @@ const routing = (
       <Switch>
         {/* Nav Routes */}
         <Route exact path="/" component={Home} />
-        <Route path="/About" component={About} />
+        <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/project" component={Project} />
         {/* Non Nav Routes */}
-        <Route path="/GitCards" component={Cards} />
-        <Route path="/Tetris" component={Tetris} />
-        <Route path="/FlashCards" component={FlashCards} />
-        <Route path="/FlashForm" component={FlashForm} />
-        <Route path="/ExampleDB" component={ExampleDB} />
+        <Route path="/gitcards" component={Cards} />
+        <Route path="/tetris" component={Tetris} />
+        <Route path="/flashcards" component={FlashCards} />
+        <Route path="/flashform" component={FlashForm} />
+        <Route path="/exampledb" component={ExampleDB} />
         {/* Recipes */}
-        <Route path="/CookBook" component={CookBook} />
-        <Route path="/RecipeForm" component={RecipeForm} />
+        <Route path="/cookbook" component={CookBook} />
+        <Route path="/recipeform" component={RecipeForm} />
         {/* RecipeApp02 */}
-        <Route path="/RecipeApp02" component={RecipeApp02} />
+        <Route path="/recipeapp02" component={RecipeApp02} />
 
         <Route component={Notfound} />
       </Switch>
