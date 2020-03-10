@@ -24,7 +24,7 @@ class About extends React.Component {
                 and web applications at a pretty young age but I didn't
                 seriously start working at it until 2017. I studied fullstack
                 through a program at the University of Kansas and did my
-                internship at a company in Olathe Kansas on a support
+                internship at a company in Olathe, Kansas on a support
                 development team where I made some of the best friends I'll ever
                 have. During my time there my attention was mostly focused on
                 building out new designs and applications for existing websites.
