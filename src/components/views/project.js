@@ -33,7 +33,7 @@ class Project extends React.Component {
           </span>
           <span className="project-button">
             <a href="https://www.copeland.work" style={{ textDecoration: "" }}>
-              Component List
+              Wordpress Sandbox
             </a>
           </span>
         </div>
