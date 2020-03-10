@@ -22,4 +22,7 @@
 
 .project-button:hover {
   background-color: #8a8a8a;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(179, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(179, 0, 0, 1);
+  box-shadow: 0px 0px 20px 0px rgba(179, 0, 0, 1);
 }
