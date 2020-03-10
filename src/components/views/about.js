@@ -51,7 +51,7 @@ class About extends React.Component {
             <div className="hobby-container">
               <div className="hobby-content">
                 <div className="hobby-title">
-                  <h3>Developement</h3>
+                  <h3>Development</h3>
                 </div>
                 <div className="hobby-description">
                   <img className="hobby-image hi1" />
